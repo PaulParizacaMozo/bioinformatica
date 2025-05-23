@@ -1,0 +1,18 @@
+* Score final(Optimo): 2
+
+* Matriz:
+   0	   0	   0	   0
+   0	   0	   0	   1
+   0	   1	   0	   0
+   0	   0	   2	   0
+   0	   0	   0	   1
+
+* N de alineamientos optimos: 1
+
+* Alineamientos optimos:
+	*Alineamiento 1:
+		S1: GC
+		S2: GC
+		S1_pos: [1 - 2]
+		S2_pos: [0 - 1]
+

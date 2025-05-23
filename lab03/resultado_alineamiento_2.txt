@@ -1,0 +1,44 @@
+* Score final(Optimo): 3
+
+* Matriz:
+   0	   0	   0	   0	   0	   0	   0	   0	   0	   0	   0	   0	   0
+   0	   0	   0	   0	   0	   0	   0	   1	   1	   1	   0	   0	   0
+   0	   0	   0	   0	   0	   0	   0	   1	   2	   2	   0	   0	   0
+   0	   0	   0	   0	   0	   0	   0	   1	   2	   3	   1	   0	   0
+   0	   0	   0	   0	   1	   1	   1	   0	   0	   1	   2	   0	   0
+   0	   0	   0	   0	   1	   2	   2	   0	   0	   0	   0	   1	   0
+   0	   0	   0	   0	   1	   2	   3	   1	   0	   0	   0	   0	   0
+   0	   1	   1	   1	   0	   0	   1	   2	   0	   0	   0	   0	   0
+   0	   1	   2	   2	   0	   0	   0	   0	   1	   0	   0	   0	   0
+   0	   1	   2	   3	   1	   0	   0	   0	   0	   0	   0	   0	   0
+   0	   0	   0	   1	   2	   0	   0	   0	   0	   0	   1	   1	   1
+   0	   0	   0	   0	   0	   1	   0	   0	   0	   0	   1	   2	   2
+   0	   0	   0	   0	   0	   0	   0	   0	   0	   0	   1	   2	   3
+
+* N de alineamientos optimos: 4
+
+* Alineamientos optimos:
+	*Alineamiento 1:
+		S1: CCC
+		S2: CCC
+		S1_pos: [0 - 2]
+		S2_pos: [6 - 8]
+
+	*Alineamiento 2:
+		S1: GGG
+		S2: GGG
+		S1_pos: [3 - 5]
+		S2_pos: [3 - 5]
+
+	*Alineamiento 3:
+		S1: TTT
+		S2: TTT
+		S1_pos: [6 - 8]
+		S2_pos: [0 - 2]
+
+	*Alineamiento 4:
+		S1: AAA
+		S2: AAA
+		S1_pos: [9 - 11]
+		S2_pos: [9 - 11]
+
