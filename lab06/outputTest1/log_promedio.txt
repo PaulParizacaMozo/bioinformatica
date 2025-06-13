@@ -1,0 +1,75 @@
+--- INICIO CLUSTERING CON METODO: promedio ---
+
+PASO 1:
+Matriz de Distancias Actual:
+	A	B	C	D	E	F	G	
+A	0.00	2.15	0.70	1.07	0.85	1.16	1.56	
+B	2.15	0.00	1.53	1.14	1.38	1.01	2.83	
+C	0.70	1.53	0.00	0.43	0.21	0.55	1.86	
+D	1.07	1.14	0.43	0.00	0.29	0.22	2.04	
+E	0.85	1.38	0.21	0.29	0.00	0.41	2.02	
+F	1.16	1.01	0.55	0.22	0.41	0.00	2.05	
+G	1.56	2.83	1.86	2.04	2.02	2.05	0.00	
+
+-> Se unen los clusters 'C' y 'E'.
+-> Distancia de union: 0.21
+
+PASO 2:
+Matriz de Distancias Actual:
+	A	B	(C,E)	D	F	G	
+A	0.00	2.15	0.77	1.07	1.16	1.56	
+B	2.15	0.00	1.46	1.14	1.01	2.83	
+(C,E)	0.77	1.46	0.00	0.36	0.48	1.94	
+D	1.07	1.14	0.36	0.00	0.22	2.04	
+F	1.16	1.01	0.48	0.22	0.00	2.05	
+G	1.56	2.83	1.94	2.04	2.05	0.00	
+
+-> Se unen los clusters 'D' y 'F'.
+-> Distancia de union: 0.22
+
+PASO 3:
+Matriz de Distancias Actual:
+	A	B	(C,E)	(D,F)	G	
+A	0.00	2.15	0.77	1.11	1.56	
+B	2.15	0.00	1.46	1.07	2.83	
+(C,E)	0.77	1.46	0.00	0.42	1.94	
+(D,F)	1.11	1.07	0.42	0.00	2.04	
+G	1.56	2.83	1.94	2.04	0.00	
+
+-> Se unen los clusters '(C,E)' y '(D,F)'.
+-> Distancia de union: 0.42
+
+PASO 4:
+Matriz de Distancias Actual:
+	A	B	((C,E),(D,F))	G	
+A	0.00	2.15	0.94	1.56	
+B	2.15	0.00	1.27	2.83	
+((C,E),(D,F))	0.94	1.27	0.00	1.99	
+G	1.56	2.83	1.99	0.00	
+
+-> Se unen los clusters 'A' y '((C,E),(D,F))'.
+-> Distancia de union: 0.94
+
+PASO 5:
+Matriz de Distancias Actual:
+	(A,((C,E),(D,F)))	B	G	
+(A,((C,E),(D,F)))	0.00	1.44	1.91	
+B	1.44	0.00	2.83	
+G	1.91	2.83	0.00	
+
+-> Se unen los clusters '(A,((C,E),(D,F)))' y 'B'.
+-> Distancia de union: 1.44
+
+PASO 6:
+Matriz de Distancias Actual:
+	((A,((C,E),(D,F))),B)	G	
+((A,((C,E),(D,F))),B)	0.00	2.06	
+G	2.06	0.00	
+
+-> Se unen los clusters '((A,((C,E),(D,F))),B)' y 'G'.
+-> Distancia de union: 2.06
+
+--- CLUSTERING FINALIZADO ---
+
+Dendrograma (formato Newick):
+(((A,((C,E),(D,F))),B),G)
